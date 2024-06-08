@@ -13,11 +13,11 @@ const Sidebar = () => {
         <div className=" h-100" style={sidebarStyle}>
             <SidebarItem
                 icon={<LiaHomeSolid className="me-2" style={{ color: "#0854A0", fontSize: "25px" }} />}
-                name='Home'
+                name='Домой'
             />
             <SidebarItem
                 icon={<BsBoxSeam className="me-2" style={{ color: "#0854A0", fontSize: "25px" }} />}
-                name='Manage Returns'
+                name='Управление возвратами'
             />
             <SidebarItem
                 icon={<MdDashboard className="me-2" style={{ color: "#0854A0", fontSize: "25px" }} />}
@@ -25,7 +25,7 @@ const Sidebar = () => {
             />
             <SidebarItem
                 icon={<HiOutlineDocumentReport className="me-2" style={{ color: "#0854A0", fontSize: "25px" }} />}
-                name='Reports'
+                name='Отчеты'
             />
         </div>
     )

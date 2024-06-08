@@ -37,8 +37,8 @@ const Header = () => {
         textDecoration: 'none'
     };
     const notificationIconStyle = {
-        width: '27px',
-        height: '27px',
+        width: '25px',
+        height: '25px',
         borderRadius: '50%',
         marginLeft: '1rem'
     };
@@ -61,7 +61,7 @@ const Header = () => {
                     alt="SAP logo"
                     style={logoStyle}
                 />
-                <h5>SAP Intelligent Returns Management</h5>
+                <h5>SAP Интеллектуальное Управление Возвратами</h5>
             </a>
             <div style={{ display: 'flex', alignItems: 'center' }}>
                 <a href="#" className="d-flex align-items-center" style={iconStyle}>
