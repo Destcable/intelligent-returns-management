@@ -44,8 +44,8 @@ const Header = () => {
     };
 
     const profileStyle = {
-        width: '50px',
-        height: '50px',
+        width: '40px',
+        height: '40px',
         borderRadius: '50%',
         marginLeft: '1rem'
     };
@@ -71,9 +71,9 @@ const Header = () => {
                         style={notificationIconStyle}
                     />
                 </a>
-                <a href="#" style={{ textDecoration: 'none' }}>
+                <a href="#" className="d-flex align-items-center" style={{ textDecoration: 'none' }}>
                     <img
-                        src="https://via.placeholder.com/60"
+                        src="https://via.placeholder.com/30"
                         alt="User profile"
                         style={profileStyle}
                     />
