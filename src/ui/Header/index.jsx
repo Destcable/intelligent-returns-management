@@ -1,5 +1,5 @@
-import { IoMdNotificationsOutline } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
+import notification from "../../lib/icons/notification.svg";
 
 const Header = () => {
     const headerStyle = {
@@ -36,6 +36,12 @@ const Header = () => {
         marginRight: '1rem',
         textDecoration: 'none'
     };
+    const notificationIconStyle = {
+        width: '30px',
+        height: '30px',
+        borderRadius: '50%',
+        marginLeft: '1rem'
+    };
 
     const profileStyle = {
         width: '50px',
@@ -59,7 +65,11 @@ const Header = () => {
             </a>
             <div style={{ display: 'flex', alignItems: 'center' }}>
                 <a href="#" className="d-flex align-items-center" style={iconStyle}>
-                    <IoMdNotificationsOutline />
+                    <img
+                        src={notification}
+                        alt="User profile"
+                        style={notificationIconStyle}
+                    />
                 </a>
                 <a href="#" style={{ textDecoration: 'none' }}>
                     <img
