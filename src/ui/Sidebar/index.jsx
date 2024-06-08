@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { LiaHomeSolid } from "react-icons/lia";
 import { BsBoxSeam } from "react-icons/bs";
 import { MdDashboard } from "react-icons/md";
@@ -11,30 +12,38 @@ const Sidebar = () => {
 
     return (
         <div className=" h-100" style={sidebarStyle}>
-            <SidebarItem
-                icon={<LiaHomeSolid className="me-2" style={{ color: "#0854A0", fontSize: "25px" }} />}
-                name='Домой'
-            />
-            <SidebarItem
-                icon={<BsBoxSeam className="me-2" style={{ color: "#0854A0", fontSize: "25px" }} />}
-                name='Управление возвратами'
-            />
-            <SidebarItem
-                icon={<MdDashboard className="me-2" style={{ color: "#0854A0", fontSize: "25px" }} />}
-                name='Dashboards'
-            />
-            <SidebarItem
-                icon={<HiOutlineDocumentReport className="me-2" style={{ color: "#0854A0", fontSize: "25px" }} />}
-                name='Отчеты'
-            />
+            <Link to="/" className="text-decoration-none">
+                <SidebarItem
+                    icon={<LiaHomeSolid className="me-2" style={{ color: "#0854A0", fontSize: "25px" }} />}
+                    name='Домой'
+                />
+            </Link>
+            <Link to="/returns" className="text-decoration-none">
+                <SidebarItem
+                    icon={<BsBoxSeam className="me-2" style={{ color: "#0854A0", fontSize: "25px" }} />}
+                    name='Управление возвратами'
+                />
+            </Link>
+            <Link to="/dashboards" className="text-decoration-none">
+                <SidebarItem
+                    icon={<MdDashboard className="me-2" style={{ color: "#0854A0", fontSize: "25px" }} />}
+                    name='Dashboards'
+                />
+            </Link>
+            <Link to="/reports" className="text-decoration-none">
+                <SidebarItem
+                    icon={<HiOutlineDocumentReport className="me-2" style={{ color: "#0854A0", fontSize: "25px" }} />}
+                    name='Отчеты'
+                />
+            </Link>
         </div>
     )
 };
 
 const SidebarItem = ({ icon, name, onClick }) => (
     <div
-        onClick={onClick} 
-        className="d-flex align-items-center p-3 sidebar__item--border-bottom"
+        onClick={onClick}
+        className="d-flex align-items-center p-3 sidebar__item--border-bottom text-dark"
         style={{ cursor: 'pointer' }}
     >
         {icon} {name}

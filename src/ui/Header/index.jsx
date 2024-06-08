@@ -52,32 +52,32 @@ const Header = () => {
 
     return (
         <header style={headerStyle}>
-            <a href="#" style={brandStyle}>
-                <a href="#" className="d-flex align-items-center" style={hamburgerMenuIconStyle}>
+            <span href="#" style={brandStyle}>
+                <span className="d-flex align-items-center" style={hamburgerMenuIconStyle}>
                     <RxHamburgerMenu />
-                </a>
+                </span>
                 <img
                     src="https://www.sap.com/dam/application/shared/logos/sap-logo-svg.svg"
                     alt="SAP logo"
                     style={logoStyle}
                 />
                 <h5>SAP Интеллектуальное Управление Возвратами</h5>
-            </a>
+            </span>
             <div style={{ display: 'flex', alignItems: 'center' }}>
-                <a href="#" className="d-flex align-items-center" style={iconStyle}>
+                <span className="d-flex align-items-center" style={iconStyle}>
                     <img
                         src={NotificationIcon}
                         alt="User profile"
                         style={notificationIconStyle}
                     />
-                </a>
-                <a href="#" className="d-flex align-items-center" style={{ textDecoration: 'none' }}>
+                </span>
+                <span className="d-flex align-items-center" style={{ textDecoration: 'none' }}>
                     <img
                         src="https://via.placeholder.com/30"
                         alt="User profile"
                         style={profileStyle}
                     />
-                </a>
+                </span>
             </div>
         </header>
     );
