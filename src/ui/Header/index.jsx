@@ -1,10 +1,10 @@
 import { RxHamburgerMenu } from "react-icons/rx";
-import notification from "../../lib/icons/notification.svg";
+import NotificationIcon from "../../lib/icons/notification.svg";
 
 const Header = () => {
     const headerStyle = {
         backgroundColor: '#354a5f',
-        padding: '0.5rem 2rem 0.5rem 1rem',
+        padding: '0.1rem 2rem 0.1rem 1rem',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
@@ -18,8 +18,8 @@ const Header = () => {
     };
 
     const logoStyle = {
-        width: '70px',
-        height: '70px',
+        width: '60px',
+        height: '60px',
         marginRight: '0.5rem'
     };
 
@@ -32,13 +32,13 @@ const Header = () => {
 
     const hamburgerMenuIconStyle = {
         color: '#ffffff',
-        fontSize: '28px',
-        marginRight: '1rem',
+        fontSize: '26px',
+        marginRight: '1.3rem',
         textDecoration: 'none'
     };
     const notificationIconStyle = {
-        width: '30px',
-        height: '30px',
+        width: '27px',
+        height: '27px',
         borderRadius: '50%',
         marginLeft: '1rem'
     };
@@ -66,7 +66,7 @@ const Header = () => {
             <div style={{ display: 'flex', alignItems: 'center' }}>
                 <a href="#" className="d-flex align-items-center" style={iconStyle}>
                     <img
-                        src={notification}
+                        src={NotificationIcon}
                         alt="User profile"
                         style={notificationIconStyle}
                     />
