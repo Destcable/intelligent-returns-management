@@ -21,8 +21,7 @@ const Sidebar = () => {
             </Link>
             <Link to="/returns" className="text-decoration-none">
                 <SidebarItem
-                    icon={<BoxIcon color='#0854A0' className='me-2' width='28px' height='28px'/>}
-                    // icon={<BsBoxSeam className="me-2" style={{ color: "#0854A0", fontSize: "25px" }} />}
+                    icon={<BoxIcon color='#0854A0' className='me-2' width='27px' height='27px'/>}
                     name='Управление возвратами'
                 />
             </Link>
