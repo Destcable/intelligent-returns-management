@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
 import { LiaHomeSolid } from "react-icons/lia";
-import { BsBoxSeam } from "react-icons/bs";
+// import { BsBoxSeam } from "react-icons/bs";
 import { MdDashboard } from "react-icons/md";
 import { HiOutlineDocumentReport } from "react-icons/hi";
+import BoxIcon from '../../lib/icons/BoxIcon';
 
 const Sidebar = () => {
     const sidebarStyle = {
@@ -20,7 +21,8 @@ const Sidebar = () => {
             </Link>
             <Link to="/returns" className="text-decoration-none">
                 <SidebarItem
-                    icon={<BsBoxSeam className="me-2" style={{ color: "#0854A0", fontSize: "25px" }} />}
+                    icon={<BoxIcon color='#0854A0' className='me-2' width='28px' height='28px'/>}
+                    // icon={<BsBoxSeam className="me-2" style={{ color: "#0854A0", fontSize: "25px" }} />}
                     name='Управление возвратами'
                 />
             </Link>

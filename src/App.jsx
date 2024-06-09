@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from "./ui/Header"
 import Sidebar from "./ui/Sidebar"
+import HomePage from './pages/HomePage';
 
 const App = () => {
-    const Home = () => <div>Домой контент</div>;
     const ReturnsManagement = () => <div>Управление возвратами контент</div>;
     const Dashboards = () => <div>Dashboards контент</div>;
     const Reports = () => <div>Отчеты контент</div>;
@@ -15,7 +15,7 @@ const App = () => {
             <Sidebar />
             <div className='flex-grow-1 p-3'>
                 <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route path="/" element={<HomePage />} />
                     <Route path="/returns" element={<ReturnsManagement />} />
                     <Route path="/dashboards" element={<Dashboards />} />
                     <Route path="/reports" element={<Reports />} />
