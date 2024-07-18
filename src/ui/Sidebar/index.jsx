@@ -13,7 +13,7 @@ const Sidebar = () => {
 
     return (
         <div className=" h-100" style={sidebarStyle}>
-            <Link to="/" className="text-decoration-none">
+            <Link to="/home" className="text-decoration-none">
                 <SidebarItem
                     icon={<LiaHomeSolid className="me-2" style={{ color: "#0854A0", fontSize: "25px" }} />}
                     name='Домой'
